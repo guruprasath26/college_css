@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Howard School of Business</title>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <img src="https://www.pngkey.com/png/full/782-7820298_howard-school-of-business-logo-howard-university.png" alt="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="management.html">Management</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" id="active">Login</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </div>
+    
+    <section class="admin" id="blur">
+        <div class="card">
+            <img src="https://images.squarespace-cdn.com/content/v1/5fc881f0a8a7305318af122b/1611630158679-XAVTC66Q6J9VWXIPMXDC/YRECentral_Your+admin%2C+simplified_Administration.png" alt="adm">
+            <div class="content">
+                <h1>Admin Login</h1>
+                <p>Perhaps it is the nature of man not to wish to know too much about his own nature.</p>
+                <div class="btn"><a href="form.html">Login</a></div>
+            </div>        
+        </div>
+    
+        <div class="card1">
+            <img src="https://images.squarespace-cdn.com/content/v1/5fc881f0a8a7305318af122b/1611630254569-YP19DTBWQJ3PLJZBWYZY/YRECentral_Your+admin%2C+simplified_operations.png" alt="staff">
+            <div class="content">
+                <h1>Staff Login</h1>
+                <p>Customers will never love a company until the employees love it first.</p>
+                <div class="btn3" onclick="toggle()">Login</div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="popup">
+        <div class="center">
+            <h1>Login</h1>
+            <button onclick="toggle()">X</button>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login">
+                <div class="signup_link">
+                    Not a member? <a href="#">Signup</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggle() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+
+        function toggle() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('ul');
+
+        hamburger.addEventListener('click', ()=>{
+            navbar.classList.toggle('slide')
+        });
+
+        hamburger.addEventListener('click', ()=>{
+            hamburger.classList.toggle('active')
+        });
+    </script>
+</body>
+</html>

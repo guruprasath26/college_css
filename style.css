@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+ html {
+     width: 100%;
+     height: 100%;
+     background: rgb(15, 1, 75);
+ }
+
+ /*navbar*/
+ .nav ul{
+    display:flex;
+    list-style:none;
+ }
+    
+ .nav ul li a {
+    text-decoration:none;
+    color:white;
+    padding:1.5rem;
+    transition:all .5s;
+    position: relative;
+ }
+    
+ .nav img {
+     width: 250px;
+     height: auto;
+ }
+ .header {
+    background:rgb(15, 1, 75);
+    overflow:hidden;
+    top:0px;
+    position: sticky;
+    z-index: 10;
+ }
+    
+ .nav {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+ }
+
+ .nav ul li a:before {
+    content:'';
+    width:0px;
+    height:30px;
+    position:absolute;
+    transition:all 1s;
+ }
+    
+ .nav ul li a:before {
+    border-bottom:3px solid rgb(240, 190, 11);
+ }
+    
+    
+ .nav ul li a:hover {
+    color:rgb(240, 190, 11);
+ }
+    
+ .nav ul li a:hover:before {
+    width:70%;
+    height:30px;
+ }
+    
+ #active {
+   color:rgb(240, 190, 11) !important;
+}
+
+/*slide*/
+
+.slider {
+   width: 100%;
+   height: 580px;
+   background: url(image/howard1.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   animation: slide 20s infinite;
+}
+
+@keyframes slide {
+   25% {
+      background: url(image/howard1.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   50% {
+      background: url(image/howard4.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   75% {
+      background: url(image/Howard2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   100% {
+      background: url(image/howard3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
+.about {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.founder {
+    width: 90%;
+    height: 440px;
+    background: rgb(201, 201, 201);
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 5px 12px rgb(0, 0, 0);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: 1s;
+}
+
+.founder:hover {
+   width: 90%;
+   height: 440px;
+   transition: 1s;
+   border-radius: 10px;
+}
+
+.founder img {
+   position: absolute;
+   width: 100%;
+   height: 440px;
+   border-radius: 10px;
+   opacity: 0.1;
+   transition: 1s;
+}
+
+.founder .hero img {
+   position: absolute;
+   width: 380px;
+   height: 380px;
+   top: 7%;
+   left: 35%;
+   border-radius: 50%;
+   opacity: 1;
+   filter: drop-shadow(0px 30px 15px rgba(0, 0, 0, .4));
+   transition: 1s;
+}
+
+.founder:hover img {
+   position: absolute;
+   left:1%;
+}
+
+.founder:hover .content {
+   font-weight: 400;
+   position: absolute;
+   top: 80px;
+   left:40%;
+   color:black;
+   text-align: center;
+   width: 50%;
+   opacity: 1;
+   transition: 1s;
+}
+  
+.founder .content {
+   opacity: 0;
+}
+
+/*Events*/
+.events {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 0px 15px;
+   background: rgb(15, 1, 75);
+}
+
+.card {
+   width: 400px;
+   height: 440px;
+   background: rgb(45, 59, 131);
+   border-radius: 10px;
+   position: relative;
+   padding: auto;
+   box-shadow: 0px 5px 12px rgba(0, 0, 0, .6);
+   margin-bottom: 3%;
+   margin-top: 8%;
+   transition: 1s;
+}
+
+.card img {
+   position: absolute;
+   width: 400px;
+   height: 440px;
+   border-radius: 10px;
+   transition: 1s;
+}
+
+.card:hover {
+   width: 450px;
+   height: 480px;
+   border-radius: 10px;
+   padding: 0;
+   transition: 1s;
+}
+
+.card:hover img {
+   position: absolute;
+   width: 450px;
+   height: 480px;
+   opacity: 0.5;
+   padding: 0px;
+   border-radius: 10px;
+   transition: 1s;
+}
+
+.card:hover .content {
+   position: absolute;
+   top: 40%;
+   color:#fff;
+   text-align: center;
+   width: 100%;
+   opacity: 1;
+   transition: 1s;
+}
+
+.card .content {
+   opacity: 0;
+}
+
+
+.card1 {
+   width: 400px;
+   height: 440px;
+   background: rgb(45, 59, 131);
+   border-radius: 10px;
+   position: relative;
+   padding: auto;
+   box-shadow: 0px 5px 12px rgba(0, 0, 0, .6);
+   margin-bottom: 3%;
+   margin-top: 8%;
+   transition: 1s;
+}
+
+.card1 img {
+   position: absolute;
+   width: 400px;
+   height: 440px;
+   border-radius: 10px;
+   transition: 1s;
+}
+
+.card1:hover {
+   width: 450px;
+   height: 480px;
+   border-radius: 10px;
+   padding: 0;
+   transition: 1s;
+}
+
+.card1:hover img {
+   position: absolute;
+   width: 450px;
+   height: 480px;
+   border-radius: 10px;
+   padding: 0;
+   opacity: 0.5;
+   transition: 1s;
+}
+
+.card1:hover .content {
+   position: absolute;
+   top: 40%;
+   color:#fff;
+   text-align: center;
+   width: 100%;
+   opacity: 1;
+   transition: 1s;
+}
+
+.card1 .content {
+   opacity: 0;
+}
+
+.card2 {
+   width: 400px;
+   height: 440px;
+   background: rgb(45, 59, 131);
+   border-radius: 10px;
+   position: relative;
+   padding: auto;
+   box-shadow: 0px 5px 12px rgba(0, 0, 0, .6);
+   margin-bottom: 3%;
+   margin-top: 8%;
+   transition: 1s;
+}
+
+.card2 img {
+   position: absolute;
+   width: 400px;
+   height: 440px;
+   border-radius: 10px;
+   transition: 1s;
+}
+
+.card2:hover {
+   width: 450px;
+   height: 480px;
+   border-radius: 10px;
+   padding: 0;
+   transition: 1s;
+}
+
+.card2:hover img {
+   position: absolute;
+   width: 450px;
+   height: 480px;
+   opacity: 0.5;
+   padding: 0;
+   border-radius: 10px;
+   transition: 1s;
+}
+
+.card2:hover .content {
+   position: absolute;
+   top: 40%;
+   color:#fff;
+   text-align: center;
+   width: 100%;
+   opacity: 1;
+   transition: 1s;
+}
+
+.card2 .content {
+   opacity: 0;
+}
+
+.card3 {
+   width: 400px;
+   height: 440px;
+   background: rgb(45, 59, 131);
+   border-radius: 10px;
+   position: relative;
+   padding: auto;
+   box-shadow: 0px 5px 12px rgba(0, 0, 0, .6);
+   margin-bottom: 3%;
+   margin-top: 8%;
+   transition: 1s;
+}
+
+.card3 img {
+   position: absolute;
+   width: 400px;
+   height: 440px;
+   border-radius: 10px;
+   transition: 1s;
+}
+
+.card3:hover {
+   width: 450px;
+   height: 480px;
+   border-radius: 10px;
+   padding: 0;
+   transition: 1s;
+}
+
+.card3:hover img {
+   position: absolute;
+   width: 450px;
+   height: 480px;
+   opacity: 0.5;
+   padding: 0;
+   border-radius: 10px;
+   transition: 1s;
+}
+
+.card3:hover .content {
+   position: absolute;
+   top: 40%;
+   color:#fff;
+   text-align: center;
+   width: 100%;
+   opacity: 1;
+   transition: 1s;
+}
+
+.card3 .content {
+   opacity: 0;
+}
+
+/*end cover*/
+
+.end-cover {
+   width: 100%;
+   height: 500px;
+   position: relative;
+   background: #000;
+}
+
+.end-cover img {
+   width: 100%;
+   height: 500px;
+   opacity: 0.7;
+}
+
+.end-cover .details {
+   position: absolute;
+   text-align: center;
+   color: #fff;
+   font-size: 30px;
+   top: 160px;
+   left: 200px;
+   right: 200px;
+}
+
+/*footer*/
+.footer {
+   width:100%;
+   height: 220px;
+   background-color:rgb(15, 1, 75);
+   display:flex;
+   }
+
+.footer img {
+   width: 250px;
+   height: 150px;
+   padding: 12px;
+} 
+  
+.icons .all-icons{
+   display:flex;
+   list-style:none;
+}
+   
+.icons .all-icons a {
+   text-decoration:none;
+   font-size: 30px;
+   color:rgb(240, 190, 11);
+   padding:1rem;
+   transition:all .5s;
+   position: relative;
+   left: 350px;
+}
+
+.end {
+   text-align: center;
+   color: aliceblue;
+   position: relative;
+   margin-top: 70px;
+   left: -130px;
+}
+
+.icons .all-icons a:hover {
+   color: white;
+   transform: rotateY(360deg);
+   transition: all .5s;
+}
+

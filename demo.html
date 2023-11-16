@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popups</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <div class="nav">
+        <span>LOGO</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae pariatur odit tempore.</h2>
+            <img src="image/nature.jpg">
+            <a href="#" onclick="toggle()">Read More</a>
+        </div>
+    </div>
+    <div id="popup">
+        <div class="center">
+            <h1>Login</h1>
+            <button onclick="toggle()">X</button>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login">
+                <div class="signup_link">
+                    Not a member? <a href="#">Signup</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggle() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('ul');
+
+        hamburger.addEventListener('click', ()=>{
+            navbar.classList.toggle('slide')
+        });
+
+        hamburger.addEventListener('click', ()=>{
+            hamburger.classList.toggle('active')
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

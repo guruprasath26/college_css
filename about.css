@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+ html {
+     width: 100%;
+     height: 100%;
+     background: rgb(201, 201, 201);
+ }
+
+ /*navbar*/
+ .nav ul{
+    display:flex;
+    list-style:none;
+ }
+    
+ .nav ul li a {
+    text-decoration:none;
+    color:white;
+    padding:1.5rem;
+    transition:all .5s;
+    position: relative;
+ }
+    
+ .nav img {
+     width: 250px;
+     height: auto;
+ }
+ .header {
+    background:rgb(15, 1, 75);
+    overflow:hidden;
+    top:0px;
+    position: sticky;
+    z-index: 10;
+ }
+    
+ .nav {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+ }
+
+ .nav ul li a:before {
+    content:'';
+    width:0px;
+    height:30px;
+    position:absolute;
+    transition:all 1s;
+ }
+    
+ .nav ul li a:before {
+    border-bottom:3px solid rgb(240, 190, 11);
+ }
+    
+    
+ .nav ul li a:hover {
+    color:rgb(240, 190, 11);
+ }
+    
+ .nav ul li a:hover:before {
+    width:70%;
+    height:30px;
+ }
+    
+ #active {
+   color:rgb(240, 190, 11) !important;
+}
+
+/*footer*/
+
+.footer {
+    width:100%;
+    height: 220px;
+    background-color:rgb(15, 1, 75);
+    display:flex;
+    }
+ 
+ .footer img {
+    width: 250px;
+    height: 150px;
+    padding: 12px;
+ } 
+   
+ .icons .all-icons{
+    display:flex;
+    list-style:none;
+ }
+    
+ .icons .all-icons a {
+    text-decoration:none;
+    font-size: 30px;
+    color:rgb(240, 190, 11);
+    padding:1rem;
+    transition:all .5s;
+    position: relative;
+    left: 350px;
+ }
+ 
+ .end {
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    margin-top: 70px;
+    left: -130px;
+ }
+
+ .icons .all-icons a:hover {
+   color: white;
+   transform: rotateY(360deg);
+   transition: all .5s;
+}

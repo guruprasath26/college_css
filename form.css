@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+ html {
+     width: 100%;
+     height: 100%;
+ }
+
+ .image {
+     position: absolute;
+     width: 100%;
+     height:100%;
+     opacity: 0.2;
+ }
+
+ .nav ul{
+    display:flex;
+    list-style:none;
+ }
+    
+ .nav ul li a {
+    text-decoration:none;
+    color:white;
+    padding:1.5rem;
+    transition:all .5s;
+    position: relative;
+ }
+    
+ .nav img {
+     width: 250px;
+     height: auto;
+ }
+ .header {
+    background:rgb(15, 1, 75);
+    overflow:hidden;
+    top:0px;
+    position: sticky;
+ }
+    
+ .nav {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+ }
+
+ .nav ul li a:before {
+    content:'';
+    width:0px;
+    height:30px;
+    position:absolute;
+    transition:all 1s;
+ }
+    
+ .nav ul li a:before {
+    border-bottom:3px solid rgb(240, 190, 11);
+ }
+    
+    
+ .nav ul li a:hover {
+    color:rgb(240, 190, 11);
+ }
+    
+ .nav ul li a:hover:before {
+    width:70%;
+    height:30px;
+ }
+    
+ #active {
+   color:rgb(240, 190, 11) !important;
+}
+
+/*form*/
+
+form {
+    position: absolute;
+    top: 50%;
+    left:47%;
+    transform: translate(-50%, -50%);
+}
+
+form .box {
+    padding: 60px;
+    background: transparent;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.box #name {
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    padding:px;
+    margin-bottom:20px;
+    width:200px;
+    color:black;
+}
+
+.btn a {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    text-decoration: none;
+    border-style: none;
+    background-color:rgb(230, 177, 18);
+    color:white;
+    padding:10px 20px;
+    border-radius:40px;
+    opacity: 1;
+}
+
+.box img {
+    position: absolute;
+    top: -25%;
+    left: 35%;
+    width: 100px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 30px 15px rgba(0, 0, 0, .4));
+}
